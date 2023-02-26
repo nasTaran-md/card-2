@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Card</title>
+</head>
+
+<body>
+    <div class="div-main">
+        <div class="main">
+            <div class="div-img">
+                <img src="img/shopping-8 1.png" alt="shoes" class="img">
+            </div>
+            <div class="div-price">
+                <p class="price"><b>3390 ₴</b></p>
+                <p class="discount"><del>4200₴</del></p>
+                <img src="img/pngwing 1.png" alt="love" class="love">
+            </div>
+            <div>
+                <h2>Кросівки PUMA X-Ray 2 Square</h2>
+            </div>
+            <hr>
+            <p>Розмір</p>
+            <div class="div-size">
+                <div class="size">36</div>
+                <div class="size">37</div>
+                <div class="size">38</div>
+                <div class="size">39</div>
+                <div class="size">40</div>
+                <div class="size">41</div>
+            </div>
+            <div class="btn-0">
+                <div class="div-0">
+                    <div class="minus" onclick="minus()">-</div>
+                    <div id="zero">0</div>
+                    <div class="plus" onclick="plus()">+</div>
+                </div>
+                <div class="div-btn">
+                    <button class="btn" type="button">
+                        <img src="img/akar-icons_cart.svg" alt="buy" class="buy">
+                        Додати в корзину
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+
+        function plus() {
+            var current = parseInt(document.getElementById('zero').innerHTML);
+            var result = current + 1;
+            document.getElementById('zero').innerHTML = result;
+
+        }
+        function minus() {
+            var current = parseInt(document.getElementById('zero').innerHTML);
+            var result = current - 1;
+            document.getElementById('zero').innerHTML = result;
+        }
+
+    </script>
+</body>
+
+</html>
